@@ -25,7 +25,7 @@ All testing activities were performed on authorized vulnerable lab machines stri
 |----------|-------------|
 | Attacker Machine | Kali Linux |
 | Target Machine | Metasploitable 2 |
-| Network Type | VMware NAT Network |
+| Network Type | VMware Host - Only Network |
 | Methodology | PTES (Penetration Testing Execution Standard) |
 
 ---
