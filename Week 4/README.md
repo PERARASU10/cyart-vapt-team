@@ -108,10 +108,7 @@ The assessment followed the **Penetration Testing Execution Standard (PTES)**:
 ## Tools Used
 - Nmap  
 - Burp Suite  
-- Postman  
 - Metasploit (conceptual usage)  
-- Frida  
-- MobSF  
 - Kali Linux  
 
 ---
