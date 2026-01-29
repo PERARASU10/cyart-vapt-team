@@ -1,281 +1,206 @@
-# 🛡️ Week 2 – Vulnerability Assessment & Penetration Testing (VAPT)
+🔐 Week 4 – Advanced Vulnerability Assessment & Penetration Testing (VAPT)
+📌 Overview
 
-## 📖 Overview
+This repository/documentation represents the Week 4 work of my Cyber Security / VAPT internship, focused on advanced penetration testing concepts, exploit chaining, API security, network protocol attacks, mobile application security, and a capstone full VAPT cycle.
 
-This repository contains the Week 2 Vulnerability Assessment and Penetration Testing (VAPT) work carried out as part of a cybersecurity internship. The objective of this week was to understand and perform a complete VAPT lifecycle, including vulnerability scanning, reconnaissance, exploitation attempts, post-exploitation analysis, and professional reporting using open-source tools in a controlled lab environment.
+All activities were performed ethically in authorized vulnerable lab and simulated environments for learning and educational purposes.
 
-All testing activities were performed on authorized vulnerable lab machines strictly for educational purposes.
+🏢 Internship Details
 
----
+Intern Name: Perarasu M
 
-## 🎯 Objectives
+Domain: Cyber Security / VAPT
 
-- Understand vulnerability scanning techniques and CVSS-based risk prioritization  
-- Perform reconnaissance and asset enumeration  
-- Simulate exploitation using industry-standard tools  
-- Analyze post-exploitation feasibility  
-- Document findings following PTES methodology  
-- Produce a consolidated technical and non-technical report  
+Organization: Cyart Tech
 
----
+Assessment Period: 22 January 2026
 
-## 🧪 Lab Environment
+Week: 4 (Advanced Level)
 
-| Component | Description |
-|----------|-------------|
-| Attacker Machine | Kali Linux |
-| Target Machine | Metasploitable 2 |
-| Network Type | VMware Host - Only Network |
-| Methodology | PTES (Penetration Testing Execution Standard) |
+🎯 Objectives of Week 4
 
----
+Understand advanced exploitation techniques
 
-## 🛠️ Tools Used
+Learn exploit chaining and defense bypass concepts
 
-- Nmap – Network and service scanning  
-- OpenVAS (GVM) – Automated vulnerability assessment  
-- Nikto – Web server vulnerability scanning  
-- Metasploit Framework – Exploitation and validation  
-- sqlmap – SQL Injection testing (simulation / lab-based)  
-- Maltego / OSINT – Reconnaissance (conceptual & lab-based)  
-- Google Docs / MS Word – Documentation and reporting  
+Perform API security testing
 
----
+Study privilege escalation & persistence
 
-## 🔁 VAPT Workflow (Step-by-Step)
+Analyze network protocol attacks
 
-### 🔹 Step 1: Planning & Scope Definition
-- Defined scope limited to Metasploitable lab VM  
-- Confirmed authorization and avoided real-world targets  
-- Selected tools based on assessment phases  
+Explore mobile application security testing
 
----
+Execute and document a full VAPT cycle (Capstone Project)
 
-### 🔹 Step 2: Reconnaissance (PTES – Recon Phase)
-- Identified exposed services and attack surface  
-- Performed service enumeration in a lab environment  
-- Documented reconnaissance findings  
+Improve professional security reporting skills
 
-**Outcome:**  
-Initial understanding of exposed services and potential entry points.
+🧪 Scope of Testing
 
----
+Vulnerable Machine: VulnHub – Mr. Robot (Simulated)
 
-### 🔹 Step 3: Vulnerability Scanning
-- Performed network scanning using Nmap (`-sV`)  
-- Conducted automated vulnerability scanning using OpenVAS  
-- Identified informational, medium, high, and critical findings  
-- Manually validated false positives where applicable  
+Web Application: WordPress CMS
 
----
+API: REST-based User Management API
 
-### 🔹 Step 4: Web Vulnerability Assessment
-- Used Nikto to identify outdated web components  
-- Identified Apache-related vulnerabilities (CVE-based)  
-- Mapped findings to OWASP Top 10 categories  
+Network Environment: Internal lab network
 
----
+Mobile Application: Test APK
 
-### 🔹 Step 5: Exploitation Attempt
-- Performed exploitation attempts using Metasploit  
-- Tested Tomcat Manager authentication misconfiguration  
-- Observed missing access control enforcement  
-- Validated exploit relevance using Exploit-DB references  
+Authorization: Approved vulnerable labs and test environments only
 
-**Note:**  
-Successful shell access was not mandatory; attempts and observations were documented professionally.
+🧭 Methodology Followed
 
----
+The assessment followed the Penetration Testing Execution Standard (PTES):
 
-### 🔹 Step 6: Post-Exploitation Analysis
-- Reviewed post-exploitation techniques  
-- Identified limitations due to lack of active session and Linux target  
-- Documented why privilege escalation was not applicable  
-- Highlighted dependency on successful exploitation  
+Planning & Scoping
 
----
+Reconnaissance
 
-### 🔹 Step 7: Capstone – Full VAPT Cycle
-- Simulated SQL Injection using sqlmap in a lab environment  
-- Logged vulnerability detection aligned with PTES phases  
-- Suggested remediation and re-scan strategy  
-- Prepared technical and non-technical summaries  
+Vulnerability Analysis
 
----
+Exploitation (Simulated)
 
-### 🔹 Step 8: Reporting
-- Created a single consolidated PDF report containing:
-  - Theoretical background  
-  - Practical findings  
-  - Tables and logs  
-  - Screenshots  
-  - Remediation recommendations  
-- Followed professional VAPT reporting standards  
+Post-Exploitation
 
----
+Reporting
 
+This ensured a structured and industry-standard approach.
 
----
+🧠 Key Concepts Covered
+🔹 Advanced Exploitation
 
-## ⚠️ Ethical Disclaimer
+Exploit chaining (XSS → Session Hijacking → Admin → RCE)
 
-All activities documented in this repository were performed on intentionally vulnerable lab environments with proper authorization. No real-world systems, networks, or applications were targeted. This work is strictly for educational and training purposes.
+Public PoC analysis and customization
 
----
+Defense bypass concepts (ASLR, ROP – theoretical)
 
-## ✅ Key Learnings
+🔹 API Security Testing
 
-- Practical understanding of the VAPT lifecycle  
-- Importance of structured methodology (PTES)  
-- Realistic handling of failed or partial exploitation attempts  
-- CVSS-based vulnerability prioritization  
-- Professional security reporting and communication  
+Tested a RESTful User Management API
 
----
+Identified Broken Object Level Authorization (BOLA)
 
-## 📌 Conclusion
+Demonstrated unauthorized data access by object ID manipulation
 
-This Week 2 VAPT exercise successfully demonstrated a full vulnerability assessment and penetration testing workflow. The project reinforced ethical hacking principles, hands-on tool usage, and professional documentation skills essential for real-world cybersecurity roles.
+Tools used: Burp Suite, Postman
 
----
+🔹 Privilege Escalation & Persistence
 
+Studied SUID-based privilege escalation
 
+Simulated cron job–based persistence
 
-# 🛡️ Week 3 – Advanced Vulnerability Assessment & Penetration Testing (VAPT)
+Understood attacker behavior after initial access
 
-## 📖 Overview
+🔹 Network Protocol Attacks
 
-This repository contains the Week 3 Advanced Vulnerability Assessment and Penetration Testing (VAPT) work carried out as part of a cybersecurity internship. The objective of this week was to gain deeper hands-on experience in advanced exploitation techniques, web application penetration testing, exploit chaining, post-exploitation concepts, and professional reporting aligned with industry standards.
+SMB Relay attack (NTLM hash interception – simulated)
 
-All testing activities were performed on authorized, intentionally vulnerable lab machines strictly for educational purposes.
+Man-in-the-Middle (MitM) attack concepts
 
----
+Emphasized risks of legacy protocols and misconfigurations
 
-## 🎯 Objectives
+🔹 Mobile Application Security
 
-- Understand advanced vulnerability exploitation and exploit chaining concepts  
-- Perform web application penetration testing based on OWASP Top 10  
-- Simulate multi-stage attack scenarios using vulnerable lab environments  
-- Analyze post-exploitation feasibility and evidence handling  
-- Develop clear technical and non-technical security reports  
-- Strengthen stakeholder communication and reporting skills  
+Identified Insecure Data Storage
 
----
+Studied dynamic testing using Frida
 
-## 🧪 Lab Environment
+Demonstrated runtime manipulation and authentication bypass concepts
 
-| Component | Description |
-|----------|-------------|
-| Attacker Machine | Kali Linux |
-| Target Machine | Metasploitable 2 |
-| Web Application | Mutillidae |
-| Network Type | VMware Host-Only / NAT Network |
-| Methodology | PTES (Penetration Testing Execution Standard) |
+🧩 Capstone Project – Full VAPT Cycle
+🔥 Vulnerability Identified
 
----
+VSFTPD 2.3.4 – Remote Code Execution (RCE)
 
-## 🛠️ Tools Used
+🖥️ Target
 
-- Nmap – Network and service enumeration  
-- OpenVAS (GVM) – Vulnerability scanning and risk identification  
-- Nikto – Web server vulnerability assessment  
-- Metasploit Framework – Exploitation attempts and validation  
-- sqlmap – SQL Injection testing and validation  
-- Burp Suite – Manual web application testing (conceptual / lab-based)  
-- Exploit-DB – Exploit reference and validation  
-- Google Docs / MS Word – Documentation and reporting  
+IP Address: 192.168.43.131
 
----
+Service: FTP (Port 21)
 
-## 🔁 VAPT Workflow (Step-by-Step)
+📍 PTES Phase Mapping
 
-### 🔹 Step 1: Planning & Scope Definition
-- Defined scope limited to Metasploitable 2 and Mutillidae web application  
-- Confirmed authorization and avoided real-world targets  
-- Selected tools based on advanced assessment requirements  
+Reconnaissance: FTP service discovery via Nmap
 
----
+Vulnerability Analysis: Outdated VSFTPD version identified
 
-### 🔹 Step 2: Reconnaissance (PTES – Recon Phase)
-- Identified exposed services and vulnerable web applications  
-- Performed service enumeration using Nmap  
-- Documented reconnaissance findings to understand attack surface  
+Exploitation: RCE simulated
 
-**Outcome:**  
-Identification of potential entry points and vulnerable application components.
+Post-Exploitation: Privilege escalation & persistence analysis
 
----
+Reporting: Technical and non-technical documentation
 
-### 🔹 Step 3: Vulnerability Scanning
-- Conducted network scanning using Nmap (`-sV`)  
-- Performed automated vulnerability assessment using OpenVAS  
-- Identified informational, medium, high, and critical vulnerabilities  
-- Reviewed findings to prioritize web-related attack vectors  
+✅ Outcome
 
----
+This capstone demonstrated a complete penetration testing workflow, from discovery to remediation.
 
-### 🔹 Step 4: Web Application Penetration Testing
-- Tested Mutillidae application for OWASP Top 10 vulnerabilities  
-- Performed manual SQL Injection testing (authentication bypass)  
-- Validated SQL Injection using sqlmap  
-- Identified improper input validation and insecure authentication logic  
+📄 Reporting Deliverables
 
----
+Technical PTES Report (300 words)
 
-### 🔹 Step 5: Advanced Exploitation (Exploit Chain Simulation)
-- Simulated an exploit chain combining SQL Injection with unauthorized data access  
-- Demonstrated how initial access can escalate to deeper system compromise  
-- Validated exploit relevance using public Exploit-DB references  
+Non-Technical Management Summary (150 words)
 
-**Note:**  
-Exploit chaining was demonstrated conceptually due to lab limitations, which reflects real-world penetration testing constraints.
+Vulnerability logs and attack summaries
 
----
+Remediation recommendations
 
-### 🔹 Step 6: Post-Exploitation Analysis
-- Reviewed post-exploitation techniques and privilege escalation concepts  
-- Identified limitations due to lack of active shell session and target OS constraints  
-- Documented post-exploitation feasibility and dependencies  
+Key learnings and challenges
 
----
+🛠 Tools & Technologies Used
 
-### 🔹 Step 7: Capstone – Full VAPT Cycle
-- Simulated a complete VAPT lifecycle on Metasploitable 2  
-- Logged vulnerability detection aligned with PTES phases  
-- Recommended remediation controls and re-scanning strategy  
-- Prepared technical and non-technical summaries  
+Nmap
 
----
+Burp Suite
 
-### 🔹 Step 8: Reporting
-- Created a single consolidated PDF report containing:
-  - Theoretical background  
-  - Web application testing results  
-  - Exploit chain simulation  
-  - Tables, logs, and screenshots  
-  - Remediation recommendations  
-- Followed professional penetration testing reporting standards  
+Postman
 
----
+Metasploit (conceptual usage)
 
-## ⚠️ Ethical Disclaimer
+Frida
 
-All activities documented in this repository were performed on intentionally vulnerable lab environments with proper authorization. No real-world systems, networks, or applications were targeted. This work is strictly for educational and training purposes.
+MobSF
 
----
+Linux (Kali)
 
-## ✅ Key Learnings
+🛡 Remediation Recommendations
 
-- Advanced understanding of exploit chaining and multi-stage attacks  
-- Practical experience with web application penetration testing  
-- Importance of manual testing alongside automated tools  
-- Handling limitations and failures in real-world pentesting scenarios  
-- Clear and effective security reporting for different stakeholders  
+Patch and remove vulnerable services
 
----
+Enforce least privilege access
 
-## 📌 Conclusion
+Implement proper API authorization
 
-This Week 3 VAPT exercise successfully demonstrated advanced penetration testing concepts, including web application exploitation, exploit chaining, and structured reporting. The project strengthened both technical and analytical skills required for real-world cybersecurity and penetration testing roles.
+Disable insecure network protocols
 
----
+Secure mobile app storage and logic
+
+Conduct regular security testing
+
+📚 Key Learnings
+
+Advanced exploit chaining techniques
+
+API and network attack vectors
+
+Importance of structured methodologies
+
+Ethical penetration testing practices
+
+Professional security reporting
+
+⚠️ Challenges Faced
+
+Tool limitations in lab environment
+
+Complexity of advanced exploits
+
+Time management
+
+Simulation constraints
+
+✅ Conclusion
+
+Week 4 strengthened my understanding of real-world penetration testing workflows, advanced attack techniques, and professional VAPT reporting. The capstone project helped consolidate all concepts into a single, end-to-end security assessment.
