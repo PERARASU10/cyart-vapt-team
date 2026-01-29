@@ -84,6 +84,18 @@ The assessment followed the **Penetration Testing Execution Standard (PTES)**:
 - **IP Address:** 192.168.43.131  
 - **Service:** FTP (Port 21)
 
+
+<img width="1922" height="1047" alt="1 mr robot" src="https://github.com/user-attachments/assets/ae17a958-61c0-4b25-8b52-c23a0ecce13c" />
+<img width="1718" height="903" alt="2 Metasplot wordpress" src="https://github.com/user-attachments/assets/02b54bb4-1e2b-45a4-a691-e2716040f4b9" />
+<img width="1720" height="905" alt="3 API " src="https://github.com/user-attachments/assets/7c0dc85d-b425-433c-86ec-8830e012603a" />
+<img width="1600" height="900" alt="4 Burpsuite" src="https://github.com/user-attachments/assets/db940013-a627-49df-be39-c217c3ad04b8" />
+<img width="875" height="734" alt="5 burp modified request" src="https://github.com/user-attachments/assets/f686f5eb-026a-45f0-b21a-f992c20fbd46" />
+<img width="1922" height="1047" alt="6 burp modified response" src="https://github.com/user-attachments/assets/a42fae74-7e20-4c01-8f22-790daa4a0cc4" />
+<img width="1920" height="1045" alt="7 privilage esclation 1" src="https://github.com/user-attachments/assets/f211e14e-5285-4e38-9cd8-de1b5decfb23" />
+<img width="650" height="516" alt="10 responder" src="https://github.com/user-attachments/assets/2ee75565-8294-4ad4-a029-67129b3cfec5" />
+<img width="1922" height="1047" alt="11 mobile app" src="https://github.com/user-attachments/assets/f51d13bb-c0ec-40a9-951d-7daa8b2b8e15" />
+
+
 ### PTES Mapping
 - Reconnaissance: FTP service discovery using Nmap  
 - Vulnerability Analysis: Outdated VSFTPD version identified  
